@@ -1,0 +1,14 @@
+﻿
+
+Cinema.Domain.Domain.User
+Cinema.Domain.Domain.User
+Cinema.Domain.Domain.User
+John,Doe,30
+John,Doe,30
+John,Doe,30
+John,Doe,30
+John,Doe,30
+John,Doe,30
+John,Doe,30
+User:John|Doe|30
+User:John|Doe|30

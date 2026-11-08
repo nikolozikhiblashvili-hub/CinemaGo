@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Project.cinema/">
+    <Project Path="Cinema.Application/Cinema.Application.csproj" />
+    <Project Path="Cinema.Domain/Cinema.Domain.csproj" />
+    <Project Path="Cinema.Infrastructure/Cinema.Infrastructure.csproj" />
+    <Project Path="Cinema.UI/Cinema.UI.csproj" />
+  </Folder>
+</Solution>
