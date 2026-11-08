@@ -31,17 +31,30 @@ namespace Cinema.Application.Services
 
         public List<User> GetAllUsers()
         {
-            var usersList = _userRepository.GetAll();
-            if(usersList == null || usersList.Count == 0)
+            try
             {
-                Console.WriteLine("No users found.");
+                var usersList = _userRepository.GetAll();
+
+                if (usersList == null || usersList.Count == 0)
+                {
+                    throw new InvalidOperationException("No users found.");
+                }
+
+                return usersList;
             }
-            return _userRepository.GetAll();
+            catch (InvalidOperationException)
+            {
+                throw;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error getting users.", ex);
+            }
         }
 
-      
 
-        
+
+
     }
 
   
